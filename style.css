@@ -99,7 +99,6 @@ body{
 .icon i:hover {
   transform: scale(1.1);
   transition: 0.4s;
-    --active: 1;
   background-color: rgb(24, 255, 255);
   box-shadow: 0px 0px 20px cyan;
 }
