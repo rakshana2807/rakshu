@@ -1,6 +1,7 @@
 *{
     margin: 0px 0px;
     padding: 0px;
+    
 }
 .box1{
     box-shadow: 0px 0px 10px white;
@@ -33,10 +34,7 @@
     min-height: 100vh;
     
 }
-.head1{
-    text-align: center;
-}
-.head2{
+.head1 , .head2{
     text-align: center;
 }
 .btn1{
@@ -51,6 +49,8 @@
 }
 .btn1:hover{
     transform: scale(1.1);
+    transition: 0.6s;
+    background: rgb(171, 67, 255);
   box-shadow: 0px 0px 20px cyan;
 }
 .btn{
@@ -65,7 +65,8 @@
 }
 .btn:hover{
     transform: scale(1.1);
-  box-shadow: 0px 0px 20px rgb(191, 0, 255);
+    transition: 0.6s;
+    background: rgb(0, 232, 253);
 }
 
 input{
@@ -78,8 +79,14 @@ input{
 body{
     background: linear-gradient(to left, aqua,rgb(193, 93, 255),aqua)
 }
-.txt{
+.txt, .txt2{
     text-align: center;
+}
+.txt2{
+    padding: 20px;
+    padding-bottom: 10px;
+    padding-top: 50px;
+    font-size: 20px;
 }
 .icon i{
     padding: 5px 20px;
@@ -91,6 +98,9 @@ body{
 }
 .icon i:hover {
   transform: scale(1.1);
+  transition: 0.4s;
+    --active: 1;
+  background-color: rgb(24, 255, 255);
   box-shadow: 0px 0px 20px cyan;
 }
 .icon{
