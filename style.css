@@ -1,1 +1,99 @@
-empty css file
+*{
+    margin: 0px 0px;
+    padding: 0px;
+}
+.box1{
+    box-shadow: 0px 0px 10px white;
+    height: 400px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(49 214 255);
+}
+.box2{
+    color: white;
+    box-shadow: 0px 0px 10px white;
+    height: 400px;
+    width: 300px;    
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(190 96 255);
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.head1{
+    text-align: center;
+}
+.head2{
+    text-align: center;
+}
+.btn1{
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    
+}
+.btn1:hover{
+    transform: scale(1.1);
+  box-shadow: 0px 0px 20px cyan;
+}
+.btn{
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    
+}
+.btn:hover{
+    transform: scale(1.1);
+  box-shadow: 0px 0px 20px rgb(191, 0, 255);
+}
+
+input{
+    padding: 5px;
+    margin: 10px 30px;
+    width: 80%;
+    border:2px solid cyan;
+    background: rgb(227, 227, 227);
+}
+body{
+    background: linear-gradient(to left, aqua,rgb(193, 93, 255),aqua)
+}
+.txt{
+    text-align: center;
+}
+.icon i{
+    padding: 5px 20px;
+    display: flex;
+    border: 2px solid white;
+    justify-content:  center;
+    border-radius: 10px;
+    margin: 15px 10px;
+}
+.icon i:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px cyan;
+}
+.icon{
+    display: flex;
+    justify-content:center;
+}
