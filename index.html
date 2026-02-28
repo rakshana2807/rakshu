@@ -1,136 +1,74 @@
 <html>
-
 <head>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
     <div class="box">
-
-        <!--BOX - 1 -->
-<div class="box2">
+        <div class="box2">
             <h1 class="head2">Hello, Friend !</h1>
             <p class="txt2">Enter your personal details and start journey with us</p><br>
-            <button type="submit" class="btn">Go to Sign In Page</button>
-        </div>
-        
-
-        <!--BOX - 2 -->
-<div class="box1">
-            <h1 class="head1">Sign in</h1>
-            <div class="icon">
-                <i class="zmdi zmdi-facebook"></i>
-                <i class="zmdi zmdi-google"></i>
-                <i class="zmdi zmdi-linkedin"></i>
-            </div>
-            <p class="txt">or use your account</p>
-            <div class="input">
-                <input type="email" name="mailid" placeholder="Email">
-                <input type="password" name="password" placeholder="Password">
-            </div>
-            <a href="#" class="pass">Forgot your password ?</a><br>
-            <button type="submit" class="btn1">Sign In</button>
-        </div>
-        
-    </div>
-    
-     <div class="box">
-        <!--BOX - 4 -->
-        <div class="box4">
-    <h1 class="head">Simple Calculator</h1>
-    <input class="ip" id="num1">
-    <input class="ip" id="num2"><br><br>
-    <div class="opp">
-    <button onclick="add()" class="btn3">Add</button>
-    <button onclick="sub()" class="btn3">Sub</button>
-    <button onclick="mul()" class="btn3">Mul</button>
-    <button onclick="div()" class="btn3">Div</button>
-</div>
-    <h3 id="result">Result</h3>
-    </div>
-        <!--BOX - 5 -->
-    <div class="box5">
-    <h1 class="head">Random Number</h1>
-    <h3 class="h">Guess the Number</h3>
-    <input class="ip" id="gnum">
-    <button onclick="check()" class="btn4">Check</button>
-    <h3 id="result1" class="h">You are Right/Wrong</h3>
-    <h3 id="score">Your Score : 10</h3>
-</div>
-    </div>
-    <div class="box3">
-        <div>
-            <img src="https://wallpaperaccess.com/full/3070781.jpg">
-        </div>
-        <div>
-            <img
-                src="https://tse2.mm.bing.net/th/id/OIP.p_2sXG4MVYStS-t0khI-igHaNK?pid=ImgDet&w=188&h=333&c=7&dpr=1.3&o=7&rm=3">
-        </div>
-        <div>
-            <img src="https://i.pinimg.com/originals/f3/7f/4b/f37f4bffcf186c7ecee07c213bf7f1e5.jpg">
-        </div>
-        <div>
-            <img src="https://tse2.mm.bing.net/th/id/OIP.3rlg3d3FOR7aFlwCQvOM8gHaM8?rs=1&pid=ImgDetMain&o=7&rm=3">
-        </div>
-        <div>
-            <img
-                src="https://tse2.mm.bing.net/th/id/OIP.8jMustuet44B6rThs4UrhAHaLH?pid=ImgDet&w=197&h=295&c=7&dpr=1.3&o=7&rm=3">
-        </div>
-        <div>
-            <img
-                src="https://tse4.mm.bing.net/th/id/OIP.7kfd5VCs029W4b9PrtsptQHaLH?pid=ImgDet&w=197&h=295&c=7&dpr=1.3&o=7&rm=3">
+            <a href="signin.html"><button type="submit" class="btn">Go to Sign In Page</button></a>
         </div>
     </div>
-        <!-- JAVA - SCRIPT -->
-
-    <script>
-        //simple calculator//
-        var n1 = document.getElementById("num1")
-        var n2 = document.getElementById("num2")
-        var result = document.getElementById("result")
-        function add() {
-            var n11 = Number(n1.value)
-            var n22 = Number(n2.value)
-            total = n11 + n22
-            result.textContent = total
+    <style>
+        .box2 {
+            color: white;
+            box-shadow: 0px 0px 10px white;
+            height: 100%;
+            margin-left: 20px;
+            width: 600px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgb(190 96 255);
         }
-        function sub() {
-            var n11 = Number(n1.value)
-            var n22 = Number(n2.value)
-            total = n11 - n22
-            result.textContent = total
+        .head2 {
+            text-align: center;
         }
-        function mul() {
-            var n11 = Number(n1.value)
-            var n22 = Number(n2.value)
-            total = n11 * n22
-            result.textContent = total
+        .txt2 {
+            text-align: center;
         }
-        function div() {
-            var n11 = Number(n1.value)
-            var n22 = Number(n2.value)
-            total = n11 / n22
-            result.textContent = total
+        .txt2 {
+            padding: 20px;
+            padding-bottom: 10px;
+            padding-top: 50px;
+            font-size: 20px;
         }
-        //random number//
-        var gnum = document.getElementById("gnum")
-        var result1 = document.getElementById("result1")
-        var rnum = Math.floor(Math.random() * 10) + 1
-        var tscore = 10
-        function check() {
-            var enternum = gnum.value
-            if (rnum == enternum) {
-                result1.textContent = "Right"
-                alert("You Won..!")
-            }
-            else {
-                tscore = tscore - 1
-                score.textContent = "Your score :" + tscore
-                result1.textContent = "Wrong"
-            }
+        button {
+            border: none;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 30px;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            background-color: rgb(255, 255, 255);
         }
-    </script>
+        button:hover {
+            transform: scale(1.1);
+            transition: 0.6s;
+            background: rgb(171, 67, 255);
+            box-shadow: 0px 0px 20px cyan;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            transition: 0.6s;
+            background: rgb(0, 232, 253);
+            box-shadow: 0px 0px 20px rgb(221, 121, 255);
+        }
+        body {
+            background: linear-gradient(to left, aqua, rgb(193, 93, 255), aqua)
+        }
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: space-around;
+            min-height: 70vh;
+        }
+    </style>
 </body>
 </html>

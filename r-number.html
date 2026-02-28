@@ -1,0 +1,120 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="box4" id="r-number">
+            <h1 class="head">Random Number</h1>
+            <h3 class="h">Guess the Number</h3>
+            <input class="ip" id="gnum">
+            <button onclick="check()" class="btn4">Check</button>
+            <h3 id="result1" class="h">You are Right/Wrong</h3>
+            <h3 id="score">Your Score : 10</h3>
+        </div>
+    </div>
+    <a href="home.html"><button class="btn4">Back</button></a>
+    <!--Style-->
+    <style>
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: space-around;
+            min-height: 70vh;
+        }
+        .box4 {
+            box-shadow: 0px 0px 10px white;
+            height: 100%;
+            margin-left: 20px;
+            padding: 20px;
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(49 214 255);
+        }
+        .ip {
+            padding: 5px;
+            margin: 10px 30px;
+            width: 50%;
+            border: 2px solid cyan;
+            font-size: 15px;
+            background: rgb(227, 227, 227);
+            border-radius: 10px;
+            height: 40px;
+            border: none;
+            justify-content: center;
+        }
+        .head {
+            border: 2px solid rgb(255, 255, 255);
+            padding: 10px;
+            text-align: center;
+            border-radius: 30px;
+            text-shadow: 0px 0px 10px rgb(255, 255, 255);
+            box-shadow: 0px 0px 15px rgb(255, 255, 255);
+        }
+        .h {
+            padding: 15px;
+            font-size: 20px;
+        }
+        .btn4 {
+            padding: 5px 20px;
+            display: flex;
+            border: 2px solid rgb(208, 132, 255);
+            justify-content: center;
+            border-radius: 10px;
+            margin: 5px 10px;
+        }
+        .btn4:hover {
+            transform: scale(1.1);
+            transition: 0.4s;
+            border: 2px solid white;
+            background-color: rgb(162, 235, 255);
+            box-shadow: 0px 0px 20px rgb(194, 51, 247);
+        }
+        #result {
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 10px;
+            height: 15px;
+            background-color: aquamarine;
+            width: fit-content;
+            padding: 10px 10px;
+            font-size: 20px;
+        }
+        #score {
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 10px;
+            height: 15px;
+            background-color: rgb(227, 143, 255);
+            width: fit-content;
+            padding: 10px 10px;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        body {
+            background: linear-gradient(to left, aqua, rgb(193, 93, 255), aqua)
+        }
+    </style>
+    <script>
+        var gnum = document.getElementById("gnum")
+        var result1 = document.getElementById("result1")
+        var rnum = Math.floor(Math.random() * 10) + 1
+        var tscore = 10
+        function check() {
+            var enternum = gnum.value
+            if (rnum == enternum) {
+                result1.textContent = "Right"
+                alert("You Won..!")
+            }
+            else {
+                tscore = tscore - 1
+                score.textContent = "Your score :" + tscore
+                result1.textContent = "Wrong"
+            }
+        }
+    </script>
+</body>
+
+</html>

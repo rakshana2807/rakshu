@@ -1,0 +1,140 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="box4" id="calc">
+            <h1 class="head">Simple Calculator</h1>
+            <input class="ip" id="num1">
+            <input class="ip" id="num2"><br><br>
+            <div class="opp">
+                <button onclick="add()" class="btn3">Add</button>
+                <button onclick="sub()" class="btn3">Sub</button>
+                <button onclick="mul()" class="btn3">Mul</button>
+                <button onclick="div()" class="btn3">Div</button>
+            </div>
+            <h3 id="result">Result</h3>
+        </div>
+    </div>
+    <a href="home.html"><button class="btn3">Back</button></a>
+    <!--Style-->
+    <style>
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: space-around;
+            min-height: 70vh;
+        }
+        .box4 {
+            box-shadow: 0px 0px 10px white;
+            height: 100%;
+            margin-left: 20px;
+            padding: 20px;
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(49 214 255);
+        }
+        body {
+            background: linear-gradient(to left, aqua, rgb(193, 93, 255), aqua)
+        }
+        .opp .btn3 {
+            padding: 5px 20px;
+            display: flex;
+            border: 2px solid white;
+            justify-content: center;
+            border-radius: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 30px;
+        }
+        .opp {
+            display: flex;
+            justify-content: center;
+        }
+        .head {
+            border: 2px solid rgb(255, 255, 255);
+            padding: 10px;
+            text-align: center;
+            border-radius: 30px;
+            text-shadow: 0px 0px 10px rgb(255, 255, 255);
+            box-shadow: 0px 0px 15px rgb(255, 255, 255);
+        }
+        #result {
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 10px;
+            height: 15px;
+            background-color: aquamarine;
+            width: fit-content;
+            padding: 10px 10px;
+            font-size: 20px;
+        }
+        .btn3 {
+            padding: 5px 20px;
+            display: flex;
+            border: 2px solid rgb(0, 255, 247);
+            justify-content: center;
+            border-radius: 10px;
+            margin: 5px 10px;
+        }
+        .btn3:hover {
+            transform: scale(1.1);
+            transition: 0.4s;
+            color: white;
+            background-color: rgb(214, 137, 255);
+            box-shadow: 0px 0px 20px cyan;
+        }
+        #num1 {
+            margin-top: 30px;
+        }
+        #num2 {
+            margin-bottom: 0px;
+        }
+        input {
+            padding: 5px;
+            margin: 5px 30px;
+            width: 80%;
+            border: 2px solid cyan;
+            font-size: 15px;
+            background: rgb(227, 227, 227);
+            border-radius: 10px;
+            height: 40px;
+            border: none;
+            justify-content: center;
+        }
+    </style>
+    <script>
+        var n1 = document.getElementById("num1")
+        var n2 = document.getElementById("num2")
+        var result = document.getElementById("result")
+        function add() {
+            var n11 = Number(n1.value)
+            var n22 = Number(n2.value)
+            total = n11 + n22
+            result.textContent = total
+        }
+        function sub() {
+            var n11 = Number(n1.value)
+            var n22 = Number(n2.value)
+            total = n11 - n22
+            result.textContent = total
+        }
+        function mul() {
+            var n11 = Number(n1.value)
+            var n22 = Number(n2.value)
+            total = n11 * n22
+            result.textContent = total
+        }
+        function div() {
+            var n11 = Number(n1.value)
+            var n22 = Number(n2.value)
+            total = n11 / n22
+            result.textContent = total
+        }
+    </script>
+</body>
+</html>

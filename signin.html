@@ -1,0 +1,125 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+</head>
+<body>
+    <div class="box">
+        <div class="box2" id="signin">
+            <h1 class="head1">Sign in</h1>
+            <div class="icon">
+                <i class="zmdi zmdi-facebook"></i>
+                <i class="zmdi zmdi-google"></i>
+                <i class="zmdi zmdi-linkedin"></i>
+            </div>
+            <p class="txt">or use your account</p>
+            <div class="input">
+                <input type="email" name="mailid" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+            </div>
+            <a href="#" class="pass">Forgot your password ?</a><br>
+            <a href="home.html"><button type="submit" class="btn1">Sign In</button></a>
+        </div>
+    </div>
+    <a href="index.html"><button class="btn3">Back</button></a>
+    <!--Style-->
+    <style>
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: space-around;
+            min-height: 70vh;
+        }
+        .btn3 {
+            padding: 5px 20px;
+            display: flex;
+            border: 2px solid rgb(0, 255, 247);
+            justify-content: center;
+            border-radius: 10px;
+            margin: 5px 10px;
+        }
+        .btn3:hover {
+            transform: scale(1.1);
+            transition: 0.4s;
+            color: white;
+            background-color: rgb(214, 137, 255);
+            box-shadow: 0px 0px 20px cyan;
+        }
+        .box2 {
+            color: rgb(0, 0, 0);
+            box-shadow: 0px 0px 10px white;
+            height: 100%;
+            margin-left: 20px;
+            width: 600px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgb(12, 212, 212);
+        }
+        .head1 {
+            text-align: center;
+        }
+        .icon i {
+            padding: 5px 20px;
+            display: flex;
+            border: 2px solid white;
+            justify-content: center;
+            border-radius: 10px;
+            margin: 15px 10px;
+        }
+        .icon i:hover {
+            transform: scale(1.1);
+            transition: 0.4s;
+            background-color: rgb(24, 255, 255);
+            box-shadow: 0px 0px 20px cyan;
+        }
+        .icon {
+            display: flex;
+            justify-content: center;
+        }
+        .txt {
+            text-align: center;
+        }
+        input {
+            padding: 5px;
+            margin: 5px 30px;
+            width: 80%;
+            border: 2px solid cyan;
+            font-size: 15px;
+            background: rgb(227, 227, 227);
+            border-radius: 10px;
+            height: 40px;
+            border: none;
+            justify-content: center;
+        }
+        button {
+            border: none;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 30px;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            background-color: rgb(255, 255, 255);
+        }
+        button:hover {
+            transform: scale(1.1);
+            transition: 0.6s;
+            background: rgb(171, 67, 255);
+            box-shadow: 0px 0px 20px cyan;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            transition: 0.6s;
+            background: rgb(0, 232, 253);
+            box-shadow: 0px 0px 20px rgb(221, 121, 255);
+        }
+        body {
+            background: linear-gradient(to left, aqua, rgb(193, 93, 255), aqua)
+        }
+    </style>
+</body>
+</html>
