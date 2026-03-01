@@ -3,27 +3,47 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="box">
         <div class="box2">
             <h1 class="head2">Hello, Friend !</h1>
             <p class="txt2">Enter your personal details and start journey with us</p><br>
-            <a href="signin.html"><button type="submit" class="btn">Go to Sign In Page</button></a>
+            <a href="signin.html" class="btn">Go to Sign In Page</a>
         </div>
     </div>
     <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to left, aqua, rgb(193, 93, 255), aqua)
+        }
+        .box {
+            display: flex;
+            width: 100%;
+            padding: 20px;
+            justify-content: center;
+        }
         .box2 {
             color: white;
             box-shadow: 0px 0px 10px white;
-            height: 100%;
-            margin-left: 20px;
-            width: 600px;
-            padding: 20px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 600px;
+            padding: 40px 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
             background: rgb(190 96 255);
         }
         .head2 {
@@ -31,43 +51,33 @@
         }
         .txt2 {
             text-align: center;
-        }
-        .txt2 {
             padding: 20px;
-            padding-bottom: 10px;
-            padding-top: 50px;
-            font-size: 20px;
+            font-size: 18px;
         }
-        button {
+        .btn{
             border: none;
             border-radius: 20px;
             padding: 10px;
-            margin: 30px;
             color: rgb(0, 0, 0);
             font-size: 15px;
             background-color: rgb(255, 255, 255);
         }
-        button:hover {
-            transform: scale(1.1);
-            transition: 0.6s;
-            background: rgb(171, 67, 255);
-            box-shadow: 0px 0px 20px cyan;
-        }
         .btn:hover {
             transform: scale(1.1);
             transition: 0.6s;
-            background: rgb(0, 232, 253);
-            box-shadow: 0px 0px 20px rgb(221, 121, 255);
+            background: rgb(77, 252, 255);
+            box-shadow: 0px 0px 20px rgb(171, 0, 228);
         }
-        body {
-            background: linear-gradient(to left, aqua, rgb(193, 93, 255), aqua)
+        @media (max-width:480px){
+        .head2{
+            font-size: 24px;
         }
-        .box {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-content: space-around;
-            min-height: 70vh;
+        .txt2{
+            font-size: 16px;
+        }
+        .btn{
+            width: 100%;
+        }  
         }
     </style>
 </body>

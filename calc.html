@@ -1,13 +1,14 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="box">
         <div class="box4" id="calc">
             <h1 class="head">Simple Calculator</h1>
-            <input class="ip" id="num1">
-            <input class="ip" id="num2"><br><br>
+            <input class="ip" id="num1" type="number" placeholder="Enter first number">
+            <input class="ip" id="num2" type="number" placeholder="Enter second number"><br><br>
             <div class="opp">
                 <button onclick="add()" class="btn3">Add</button>
                 <button onclick="sub()" class="btn3">Sub</button>
@@ -75,9 +76,7 @@
         }
         .btn3 {
             padding: 5px 20px;
-            display: flex;
             border: 2px solid rgb(0, 255, 247);
-            justify-content: center;
             border-radius: 10px;
             margin: 5px 10px;
         }
@@ -98,7 +97,6 @@
             padding: 5px;
             margin: 5px 30px;
             width: 80%;
-            border: 2px solid cyan;
             font-size: 15px;
             background: rgb(227, 227, 227);
             border-radius: 10px;
@@ -132,8 +130,12 @@
         function div() {
             var n11 = Number(n1.value)
             var n22 = Number(n2.value)
-            total = n11 / n22
-            result.textContent = total
+             if (n22 === 0) {
+                result.textContent = "Cannot divide by 0"
+             } else {
+                  total = n11 / n22
+                  result.textContent = total
+    }
         }
     </script>
 </body>

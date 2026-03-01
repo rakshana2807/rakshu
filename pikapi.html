@@ -31,10 +31,9 @@
     <style>
         .box3 {
             display: flex;
-            flex-wrap: wrap;
-            margin: 60px;
-            justify-content: center;
-            padding-bottom: 30px;
+            height: 500px;
+            margin: 70px 60px;
+            gap: 10px;
         }
         body {
             background: linear-gradient(to left, aqua, rgb(193, 93, 255), aqua)
@@ -43,22 +42,20 @@
             width: 100px;
             object-fit: cover;
             height: 500px;
-            margin-bottom: 60px;
-            margin: 0px 1px;
-            border-width: 2px;
-            border-color: black;
-            border-style: outset;
+            cursor: pointer;
+            margin: 5px px;
+            border: 2px outset black;
             box-shadow: 0px 0px 10px rgb(255, 255, 255);
             border-radius: 10px 10px 10px 10px;
+            transition: 0.4s ease-in-out;
         }
         .box3 img:hover {
             width: 200px;
-            height: 500px;
-            transition: 0.4s all ease-in-out;
         }
         .btn4 {
             padding: 5px 20px;
             display: flex;
+            text-decoration: none;
             border: 2px solid rgb(208, 132, 255);
             justify-content: center;
             border-radius: 10px;
